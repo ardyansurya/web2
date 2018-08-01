@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Food</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <style>
+        body,h1 {font-family: "Raleway", Arial, sans-serif}
+        h1 {letter-spacing: 6px}
+        .w3-row-padding img {margin-bottom: 12px}
+
+      </style>
+
+</head>
+<body>  
+
+
+          <!-- Navbar (sit on top) -->
+<div class="w3-top">
+
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunctionIcon()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <a href="index.html#home" class="w3-bar-item w3-button"><b>E-FOOD</b></a>
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+
+      <a href="index.html#newmenu" class="w3-bar-item w3-button">New Menu</a>
+
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="index.html#foods">Foods</a>
+          <a href="index.html#drinks">Drinks</a>
+        </div>
+      </div> 
+
+      <a href="index.html#aboutus" class="w3-bar-item w3-button">About Us</a>
+
+      <a href="index.html#contactus" class="w3-bar-item w3-button">Contact Us</a>
+
+      <div class="dropdown1">
+          <button class="dropbtn1" onclick="myFunction1()">User Area
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1" id="myDropdown1">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+      </div> 
+
+
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+  <a href="index.html#home" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Home</a>
+  <a href="index.html#newmenu" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">New Menu</a>
+
+      <div class="dropdown2">
+          <button class="dropbtn2" onclick="myFunction2()">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2" id="myDropdown2">
+            <a href="index.html#foods" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Foods</a>
+            <a href="index.html#drinks" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Drinks</a>
+          </div>
+      </div>
+     
+  <a href="index.html#aboutus" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">About Us</a>
+  <a href="index.html#contactus" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Contact Us</a>
+
+      <div class="dropdown3">
+          <button class="dropbtn3" onclick="myFunction3()">User Area
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content3" id="myDropdown3">
+            <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Login</a>
+            <a href="register.html" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Register</a>
+          </div>
+      </div>      
+
+</div>
+
+    <div class="headerr">
+      <div class="progress-containerr">
+        <div class="progress-barr" id="myBar"></div>
+      </div>
+  </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" id="foods" style="padding:128px 16px">
+  <h1 class="w3-xlarge">DRINKS</h1>
+  <h1>ANEKA TEH</h1>
+  
+  <div class="w3-padding-16">
+    <div class="w3-bar w3-border">
+
+
+      <span class="w3-bar-item w3-pale-red">SERVE</span>
+      <span class="w3-bar-item w3-pale-green">YOU</span>
+      <span class="w3-bar-item w3-pale-blue">LIKE</span>
+      <span class="w3-bar-item w3-pale-yellow">BOSS</span>
+
+
+    </div>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-margin-top ">
+  <div class="w3-third">
+    <div class="w3-card w3-pale-red w3-round-xxlarge">
+      <img src="images/teh/tehmanisdingin.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Manis Dingin</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-red w3-round-xxlarge">
+      <img src="images/teh/tehmanishangat.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center ">
+        <h5>Teh Manis Hangat</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-red w3-round-xxlarge">
+      <img src="images/teh/tehpahitdingin.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Pahit Dingin</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card w3-pale-green w3-round-xxlarge">
+      <img src="images/teh/tehpahithangat.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Pahit Hangat</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-green w3-round-xxlarge">
+      <img src="images/teh/lemonteadingin.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Lemon Tea Dingin</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-green w3-round-xxlarge">
+      <img src="images/teh/lemonteahangat.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Lemon Tea Hangat</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card w3-pale-blue w3-round-xxlarge">
+      <img src="images/teh/tehtarikdingin.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Tarik Dingin</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-blue w3-round-xxlarge">
+      <img src="images/teh/tehtarikhangat.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Tarik Hangat</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-pale-blue w3-round-xxlarge">
+      <img src="images/teh/tehsusu.jpg" class="w3-round-xxlarge" style="width:100%">
+      <div class="w3-container w3-center">
+        <h5>Teh Susu</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn1')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+      if (myDropdown1.classList.contains('show1')) {
+        myDropdown1.classList.remove('show1');
+      }
+  }
+}
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn2')) {
+    var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show2')) {
+        myDropdown2.classList.remove('show2');
+      }
+  }
+}
+</script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show3");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn3')) {
+    var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show3')) {
+        myDropdown3.classList.remove('show3');
+      }
+  }
+}
+</script>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunctionIcon() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction4()};
+
+function myFunction4() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<hr>
+
+
+
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+
+  <a href="#foods" class="w3-button w3-light-grey w3-xxxlarge w3-margin-top"><i class="fa fa-arrow-up w3-center"></i></a>
+
+  <div>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>&copy;2018 e-food.xyz</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

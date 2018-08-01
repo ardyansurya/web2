@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Food</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <style>
+
+      </style>
+
+</head>
+<body>  
+
+
+          <!-- Navbar (sit on top) -->
+<div class="w3-top">
+
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunctionIcon()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <a href="#home" class="w3-bar-item w3-button"><b>E-FOOD</b></a>
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+
+      <a href="#newmenu" class="w3-bar-item w3-button">New Menu</a>
+
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#foods">Foods</a>
+          <a href="#drinks">Drinks</a>
+        </div>
+      </div> 
+
+      <a href="#aboutus" class="w3-bar-item w3-button">About Us</a>
+
+      <a href="#contactus" class="w3-bar-item w3-button">Contact Us</a>
+
+      <div class="dropdown1">
+          <button class="dropbtn1" onclick="myFunction1()">User Area
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content1" id="myDropdown1">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+      </div> 
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+  <a href="index.html#home" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Home</a>
+  <a href="index.html#newmenu" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">New Menu</a>
+
+      <div class="dropdown2">
+          <button class="dropbtn2" onclick="myFunction2()">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2" id="myDropdown2">
+            <a href="index.html#foods" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Foods</a>
+            <a href="index.html#drinks" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Drinks</a>
+          </div>
+      </div>
+     
+  <a href="index.html#aboutus" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">About Us</a>
+  <a href="index.html#contactus" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Contact Us</a>
+
+      <div class="dropdown3">
+          <button class="dropbtn3" onclick="myFunction3()">User Area
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content3" id="myDropdown3">
+            <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Login</a>
+            <a href="register.html" class="w3-bar-item w3-button w3-padding-large w3-center" onclick="myFunctionIcon()">Register</a>
+          </div>
+      </div>      
+
+</div>
+
+    <div class="headerr">
+  		<div class="progress-containerr">
+    		<div class="progress-barr" id="myBar"></div>
+  		</div>
+	</div>
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="images/home/company.jpg" alt="Company" width="1500" height="1000">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LIN</b></span><span class="w3-padding w3-white w3-opacity-min">Group</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="newmenu">
+    <h3 class=" w3-border-grey w3-padding-16 w3-center w3-lime w3-round-xlarge">New Menu</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Indomie Rendang</div>
+        <img src="images/newmenu/indomierendang.jpg" class="w3-round-xxlarge" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-green w3 w3-round-large">Pancake Durian</div>
+        <img src="images/newmenu/pancakedurian.jpg" class="w3-round-xxlarge" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Grilled Chicken</div>
+        <img src="images/newmenu/grilledchicken.jpg" class="w3-round-xxlarge" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Bakso Sapi</div>
+        <img src="images/newmenu/baksosapi.jpg" class="w3-round-xxlarge" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Strips Burger</div>
+        <img src="images/newmenu/stripsburger.jpg" class="w3-round-xxlarge" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-green w3-round-large">Nasi Ayam Geprek</div>
+        <img src="images/newmenu/nasiayamgeprek.jpg" class="w3-round-xxlarge" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Dimsum Mango</div>
+        <img src="images/newmenu/dimsummango.jpg"class="w3-round-xxlarge" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Crispy Chicken</div>
+        <img src="images/newmenu/crispychicken.jpg"class="w3-round-xxlarge" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="foods">
+    <h3 class=" w3-border-grey w3-padding-16 w3-center w3-khaki w3-round-xlarge">Foods</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Aneka Nasi</div>
+        <a href="anekanasi.html"><img src="images/foods/anekanasi.jpg" class="w3-round-xxlarge" alt="AnekaNasi" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-green w3 w3-round-large">Aneka Mie</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekamie.html"><img src="images/foods/anekamie.jpg" class="w3-round-xxlarge" alt="AnekaMie" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Aneka Kwetiau</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekakwetiau.html"><img src="images/foods/anekakwetiau.jpg" class="w3-round-xxlarge" alt="AnekaKwetiau" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Aneka Bihun</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekabihun.html"><img src="images/foods/anekabihun.jpg" class="w3-round-xxlarge" alt="AnekaBihun" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Aneka Dimsum</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekadimsum.html"><img src="images/foods/anekadimsum.jpg" class="w3-round-xxlarge" alt="AnekaDimsum" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-green w3-round-large">Aneka Steak</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekasteak.html"><img src="images/foods/anekasteak.jpg" class="w3-round-xxlarge" alt="AnekaSteak" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Aneka Bakso</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekabakso.html"><img src="images/foods/anekabakso.jpg"class="w3-round-xxlarge" alt="AnekaBakso" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Aneka Seafood</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekaseafood.html"><img src="images/foods/anekaseafood.jpg"class="w3-round-xxlarge" alt="AnekaSeafood" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="drinks">
+    <h3 class="w3-border-grey w3-padding-16 w3-center w3-amber w3-round-xlarge">Drinks</h3>
+  </div>
+
+  <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Aneka Teh</div>
+          <a href="anekateh.html"><img src="images/drinks/anekateh.jpg" class="w3-round-xxlarge" alt="AnekaTeh" style="width:100%"></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-padding w3-pale-green w3 w3-round-large">Aneka Kopi</div>
+          <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+          <a href="anekakopi.html"><img src="images/drinks/anekakopi.jpg" class="w3-round-xxlarge" alt="AnekaKopi" style="width:100%"></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Aneka Es</div>
+          <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+          <a href="anekaes.html"><img src="images/drinks/anekaes.jpg" class="w3-round-xxlarge" alt="AnekaEs" style="width:100%"></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Aneka Jus</div>
+          <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+          <a href="anekajus.html"><img src="images/drinks/anekajus.jpg" class="w3-round-xxlarge" alt="AnekaJus" style="width:100%"></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-red w3-round-large">Aneka Sirup</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekasirup.html"><img src="images/drinks/anekasirup.jpg" class="w3-round-xxlarge" alt="AnekaSirup" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-green w3-round-large">Aneka Soda</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekasoda.html"><img src="images/drinks/anekasoda.jpg" class="w3-round-xxlarge" alt="AnekaSoda" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-yellow w3-round-large">Aneka Yogurt</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekayogurt.html"><img src="images/drinks/anekayogurt.jpg"class="w3-round-xxlarge" alt="AnekaYogurt" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-padding w3-pale-blue w3-round-large">Crispy Chicken</div>
+        <div class="w3-display-bottomright w3-padding w3-black w3 ">Coming Soon</div>
+        <a href="anekateh.html"><img src="images/drinks/anekateh.jpg"class="w3-round-xxlarge" alt="House" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="aboutus">
+    <h3 class= "w3-border-grey w3-padding-16 w3-center w3-grey w3-round-xlarge">About Us</h3>
+    <p>Bermula di tahun 2018, E-Food sebagai perusahaan penyedia layanan jual-beli makanan dan minuman melalui website, E-Food kini telah tumbuh menjadi on-demand website platform yang menyediakan berbagai macam makanan dan minuman.</p>
+
+    <p>E-food adalah sebuah perusahaan teknologi berjiwa sosial yang bertujuan untuk meningkatkan kesejahteraan penjual dan kepuasan pelanggan. Kegiatan E-Food bertumpu pada 3 nilai pokok: kualitas, kesejahteraan, dan kepuasan.
+
+    <p>Para penjual di E-Food mengatakan bahwa pendapatan mereka meningkat semenjak bergabung sebagai mitra dengan mendapatkan akses ke lebih banyak pelanggan melalui website kami.</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/home/team2.jpg" alt="John" style="width:100%">
+      <h3>Ardyan Surya</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>~~~~~~~~  03081170002  ~~~~~~~    ~~~~~~~~~~ 17IS2 ~~~~~~~~~~  ~~ Universitas Pelita Harapan Medan ~~</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/home/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Editor</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/home/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Photographer</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/home/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Web Developer</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contactus">
+    <h3 class= "w3-border-grey w3-padding-16 w3-center w3-black w3-round-xlarge">Contact Us</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn1')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+      if (myDropdown1.classList.contains('show1')) {
+        myDropdown1.classList.remove('show1');
+      }
+  }
+}
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn2')) {
+    var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show2')) {
+        myDropdown2.classList.remove('show2');
+      }
+  }
+}
+</script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show3");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn3')) {
+    var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show3')) {
+        myDropdown3.classList.remove('show3');
+      }
+  }
+}
+</script>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunctionIcon() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction4()};
+
+function myFunction4() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+
+  <a href="#home" class="w3-button w3-light-grey w3-xxxlarge w3-margin-top"><i class="fa fa-arrow-up w3-center"></i></a>
+
+  <div>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>&copy;2018 e-food.xyz</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
